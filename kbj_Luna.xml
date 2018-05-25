@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window xmlns="http://www.chi-tai.info/BatteryStatus" imagesrc="kbj_Luna" version="1.0" mode="2" custombg="-1" gesture="0">
+
+	<!-- VIEW -->
+	<Row name="VIEW" rowtoggle="0" itemselect="1">
+
+		<!-- View Schedule -->
+		<View height="695" absolute="3" multi="1" animate="100">
+
+		<image src="View\title.png" absolute="3" left="185" top="19" width="110" height="25" />
+
+		<!-- 레퍼런스 : 탭 로딩속도 향상을 위한 분산
+		<image src="1View\Schedule_bg.png" absolute="3" left="18" top="53" width="444" height="545" />
+		-->
+		<image src="View\Schedule_V.png" absolute="3" left="235" top="48" width="2" height="181" />
+		<image src="View\Schedule_Vbc.png" absolute="3" left="235" top="229" width="2" height="43" />
+		<image src="View\Schedule_H.png" absolute="3" left="18" top="272" width="219" height="2" />
+		<image src="View\Schedule_H.png" absolute="3" left="237" top="272" width="225" height="2" />
+
+		<Item class="tPlug" title="calendar_for_pokeP" cachebg="1" ontap="DoN" onhold="DoN">
+			<label align="center" valign="top" left="25" top="52" width="205" />
+	    </Item>
+		<Item class="tPlug" title="TimeRule" cachebg="1" ontap="DoN" onhold="DoN">
+			<label align="center" valign="top" left="191" top="51" width="290" />
+	    </Item>		
+		<Item class="tPlug" title="&quot;TodayAgenda&quot;" cachebg="1" ontap="DoN" onhold="DoN">
+			<label align="center" valign="top" left="24" top="275" width="428" height="270" />
+	    </Item>
+
+		<Item class="space" type="icon" absolute="3" ontap="StartApp" path="\Program Files\Pocket Agenda\Pocket Agenda.exe">
+			<image src="View\p1.png" left="45" top="570" width="110" height="110" />
+		</Item>
+		<Item class="space" type="icon" absolute="3" ontap="StartApp" path="\Program Files\Natara\DayNotez\DayNotezPPC.exe">
+			<image src="View\p2.png" left="185" top="570" width="110" height="110" />
+		</Item>
+		<Item class="space" type="icon" absolute="3" ontap="StartApp" path="\Program Files\MyLife Organized\MLO.exe">
+			<image src="View\p3.png" left="325" top="570" width="110" height="110" />
+		</Item>
+
+		</View>
+
+	</Row>
+	<!-- /VIEW -->
+
+</Window> 
